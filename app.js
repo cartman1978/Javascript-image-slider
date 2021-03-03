@@ -6,6 +6,7 @@ const container = document.querySelector(".container");
 const drag = (e) => {
   let xPos = e.layerX;
   before.style.width = xPos + 'px';
+  slider.style.left = xPos + 'px';
   
 }
 
