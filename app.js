@@ -7,6 +7,11 @@ const drag = (e) => {
   let xPos = e.layerX;
   before.style.width = xPos + 'px';
   slider.style.left = xPos + 'px';
+
+  if (xPos < 50) {
+      before.style.width = 0;
+      slider.style.left = 0;
+  }
   
 }
 
